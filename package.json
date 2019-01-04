@@ -3,20 +3,33 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "start": "babel-node ./server/server.js",
+    "import-data": "babel-node ./scripts/import-data-from-parse.js",
+    "update-schema": "babel-node ./server/schema/updateSchema.js",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.57.8"
   },
   "devDependencies": {
-    "babel-jest": "23.6.0",
+    "babel-jest": "^23.6.0",
     "jest": "23.6.0",
+    "jest-cli": "^23.6.0",
     "metro-react-native-babel-preset": "0.51.1",
     "react-test-renderer": "16.6.3"
   },
   "jest": {
-    "preset": "react-native"
+    "haste": {
+      "defaultPlatform": "ios",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "providesModuleNodeModules": [
+        "react-native"
+      ]
+    }
   }
 }
