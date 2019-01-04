@@ -12,5 +12,10 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 5,
         textAlign: 'center',
-    }
+    },
+    welcome: {
+        fontSize: 20,
+        margin: 10,
+        textAlign: 'center'
+    },
 });
