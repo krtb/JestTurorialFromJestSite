@@ -1,3 +1,4 @@
+// Intro.js
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -16,18 +17,18 @@ const styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         margin: 10,
-        textAlign: 'center'
+        textAlign: 'center',
     },
 });
 
 export default class Intro extends Component {
     render() {
         return (
-            <View style={styles.container} >
-                <Text style={styles.welcome} > Welcome to our version of react native! </Text>
-                <Text style={styles.container}>
-                    ~~This is a react native snapshot test~~
-                </Text>
+            <View style={styles.container}>
+                <Text style={styles.welcome}>Welcome to React Native!</Text>
+                <Text style={styles.instructions}>
+                    This is a React Native snapshot test.
+        </Text>
             </View>
         );
     }
