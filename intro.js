@@ -7,5 +7,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5FCFF',
         flex: 1,
         justifyContent: 'center',
-    } 
+    },
+    instructions: {
+        color: '#333333',
+        marginBottom: 5,
+        textAlign: 'center',
+    }
 });
