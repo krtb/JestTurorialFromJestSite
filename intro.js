@@ -23,7 +23,12 @@ const styles = StyleSheet.create({
 export default class Intro extends Component {
     render() {
         return (
-            
+            <View style={styles.container} >
+                <Text style={styles.welcome} > Welcome to our version of react native! </Text>
+                <Text style={styles.container}>
+                    ~~This is a react native snapshot test~~
+                </Text>
+            </View>
         );
     }
 }
