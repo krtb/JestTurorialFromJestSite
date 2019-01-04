@@ -19,3 +19,11 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
 });
+
+export default class Intro extends Component {
+    render() {
+        return (
+            
+        );
+    }
+}
