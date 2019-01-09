@@ -3,9 +3,11 @@ import React from 'react';
 import Intro from '../Intro';
 
 // must be required AFTER react native
-import { create } from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 
-test('renders correctly', () => {
-    const tree = renderer.create(<Intro/>).toJSON();
+jest.setTimeout(15000);
+
+it('renders correctly', () => {
+    const tree = renderer.create(<Intro />).toJSON();
     expect(tree).toMatchSnapshot();
 });
